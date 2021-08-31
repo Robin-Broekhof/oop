@@ -23,6 +23,8 @@ class Pokemon{
         $this->weakness = $weakness;
         $this->resistance = $resistance;
     }
+
+    
     public function sayOneliner(){
         echo '<h2>' . $this->name . '</h2>';
     }
