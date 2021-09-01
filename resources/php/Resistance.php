@@ -1,8 +1,8 @@
 <?php
 class Resistance{
 
-    $public $energyType;
-    $public $mutiplier;
+    public $energyType;
+    public $mutiplier;
 
     public function __construct($energyType, $mutiplier)
     {

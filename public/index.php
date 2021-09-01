@@ -1,15 +1,15 @@
 <?php
-    require("../resources/php/head.php")
+    require("../resources/php/head.php");
 ?>
 
 <?php
-    $pikachu = new pokemon("pikachu","lightning",60,60,null,"fire","fighting",);
-    $charmeleon = new pokemon("charmeleon","fire",60,60,null,"water","lightning");
+    $charmeleon = new Charmeleon("Dp");
+    $pikachu = new Pikachu("23");
 
-    
+    print_r('<pre>'. $charmeleon . '</pre>');
+    print_r('<pre>'. $pikachu . '</pre>');
 
-    
-$pikachu->sayOneliner();
+
 ?>
 
 

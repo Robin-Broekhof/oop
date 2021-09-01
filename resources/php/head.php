@@ -1,5 +1,9 @@
 <?php
-    require("pokemon.php")
+    require("pokemon.php");
+    
+    spl_autoload_register(function($class){
+    include $class . '.php';
+    });
 ?>
 
 <!DOCTYPE html>
