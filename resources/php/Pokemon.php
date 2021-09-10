@@ -9,7 +9,7 @@ class Pokemon{
     public $weakness;
     public $resistance;
 
-    public $health;
+    public static $health;
 
 
     public function __construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance)
@@ -38,22 +38,39 @@ class Pokemon{
         return pokemon::$population;
     }
 
-
-
-    public function attacksTemp(){
-        return $this->attacks[0]->name;
+    public function getHitpoints(){
+        return pikachu::$hitpoints;
     }
 
-    public function getHealth(){
-        $this->health = $this->hitpoints - 20;
-        $this->health = $this->health - 20;
-        return $this->health;
+
+
+    public function battle($attacker, $attackNumber){
+
+
+        /*
+        return $this->health = $this->hitpoints - $this->attacks[0]->damage;    //pakt de damage van de aanval en haalt het van de health af
+        */
+        
+        return Pikachu::health = Pikachu::hitpoints - Pikachu::attacks[0]->damage;
+        
+        /*
+        return $pikachu->health = $pikachu->hitpoints - $pikachu->attacks[0]->damage;
+        */
+
+        
+        
+
+
     }
 
-    public function battleStart(){
-        $this->attacks[0]->name;    //electric ring
-        $this->attacks[1]->name;    //flare
-        $this->health
+
+    public function checkHealth(){
+        if($this->health <= 0){
+            $population--;
+        }
+        else{
+
+        }
 
     }
 
