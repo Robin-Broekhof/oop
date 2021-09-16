@@ -8,30 +8,26 @@
     
     
 
-    /*
-    print_r('<pre>'. $charmeleon . '</pre>');
-    print_r('<pre>'. $pikachu . '</pre>');
-    */
-
-    //echo pokemon::battleStart();
 
     pokemon::battle($pikachu,$pikachu->attacks[0],$charmeleon);
-
-
-
-
-
-    //print_r($charmeleon->attacks());
     echo "<br>";
+    pokemon::battle($charmeleon,$charmeleon->attacks[1],$pikachu);
 
-    /*
-    echo pokemon::getPopulation();
-    */
 
 
 
 
 ?>
 
-
-
+<div>
+<br><br><br><br><br><br>
+    <h1>HTML uitwerking</h1>
+    <a>Charmeleon hitpoins: 60</a><br>
+    <a>Pikachu hitpoins: 60</a><br>
+    <br>
+    <a>Pikachu valt Charmeleon aan met Electric Ring</a><br>
+    <a>Charmeleon hitpoins van 60 naar 10</a><br>
+    <a>Charmeleon valt Pikachu aan met flare</a><br>
+    <a>Pikachu hitpoins van 60 naar 30</a><br>
+    
+</div>

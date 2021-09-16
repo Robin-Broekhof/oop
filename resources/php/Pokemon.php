@@ -9,7 +9,7 @@ class Pokemon{
     public $weakness;
     public $resistance;
 
-    public static $health;
+    public $health;
 
     
     public function __construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance)
@@ -45,14 +45,14 @@ class Pokemon{
 
     public function battle($attacker, $attackNumber, $attackTarget){
 
-        echo($attacker->hitpoints);
-            echo("<br>");
-        echo($attackNumber->name);
-        echo("=");
-        echo($attackNumber->damage);
-            echo("<br>");
-        echo($attackTarget->hitpoints);
         
+        echo get_class($attackTarget), " hitpoints: ", $attackTarget->hitpoints, "<br>";
+        echo get_class($attacker), " valt ", get_class($attackTarget), " aan met ", 
+            $attackNumber->name, "(", $attackNumber->damage ,"dmg)", "<br>";
+        echo get_class($attackTarget)," ", $attackTarget-> health = $attackTarget->hitpoints - $attackNumber->damage;
+        echo "<br><br>";
+
+
 
     }
 

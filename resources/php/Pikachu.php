@@ -12,7 +12,7 @@ class Pikachu extends Pokemon{
             new Attacks("Electric Ring", 50),
             new Attacks("Pika Punch", 20)
         );
-        $weakness = new Weakness(ELECTRIC, 2);
+        $weakness = new Weakness(FIRE, 1.5);
         $restistance = new Resistance(FIGHTING, 10);
 
         parent::__construct($name, $energyType, $hitpoints, $attacks, $weakness, $restistance);
