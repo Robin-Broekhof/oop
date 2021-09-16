@@ -15,10 +15,8 @@
 
     //echo pokemon::battleStart();
 
+    pokemon::battle($pikachu,$pikachu->attacks[0],$charmeleon);
 
-
-    pokemon::battle('pikachu', 'pikachu->attacks[0]');
-    pokemon::battle('charmeleon', 'charmeleon->attack[1]');
 
 
 

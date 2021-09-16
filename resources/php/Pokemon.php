@@ -11,7 +11,7 @@ class Pokemon{
 
     public static $health;
 
-
+    
     public function __construct($name, $energyType, $hitpoints, $attacks, $weakness, $resistance)
     {
         $this->name = $name;
@@ -20,14 +20,11 @@ class Pokemon{
         $this->attacks = $attacks;
         $this->weakness = $weakness;
         $this->resistance = $resistance;
-        $this->min = 20;
         self::$population++;
     }
 
-    
-    public function __toString(){
-        return json_encode($this);
-    }
+
+
     public function hitpointChecker(){
         print_r($this->hitpoints);
     }
@@ -42,24 +39,20 @@ class Pokemon{
         return pikachu::$hitpoints;
     }
 
+    /**
+     *  
+     */
 
+    public function battle($attacker, $attackNumber, $attackTarget){
 
-    public function battle($attacker, $attackNumber){
-
-
-        /*
-        return $this->health = $this->hitpoints - $this->attacks[0]->damage;    //pakt de damage van de aanval en haalt het van de health af
-        */
+        echo($attacker->hitpoints);
+            echo("<br>");
+        echo($attackNumber->name);
+        echo("=");
+        echo($attackNumber->damage);
+            echo("<br>");
+        echo($attackTarget->hitpoints);
         
-        return Pikachu::health = Pikachu::hitpoints - Pikachu::attacks[0]->damage;
-        
-        /*
-        return $pikachu->health = $pikachu->hitpoints - $pikachu->attacks[0]->damage;
-        */
-
-        
-        
-
 
     }
 
