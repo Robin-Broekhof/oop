@@ -1,6 +1,5 @@
 <?php
 class Resistance{
-
     public $energyType;
     public $mutiplier;
 
@@ -9,6 +8,4 @@ class Resistance{
         $this->energyType = $energyType;
         $this->mutiplier = $mutiplier;
     }
-
-
 }

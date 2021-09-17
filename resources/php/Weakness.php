@@ -1,6 +1,5 @@
 <?php
 class Weakness{
-
     public $energyType;
     public $mutiplier;
 
@@ -9,6 +8,4 @@ class Weakness{
         $this->energyType = $energyType;
         $this->mutiplier = $mutiplier;
     }
-
-
 }

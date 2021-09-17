@@ -1,6 +1,5 @@
 <?php
 class Attacks{
-
     public $name;
     public $damage;
 
@@ -9,6 +8,4 @@ class Attacks{
         $this->name = $name;
         $this->damage = $damage;
     }
-
-
 }
