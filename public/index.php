@@ -6,7 +6,9 @@
     $charmeleon = new Charmeleon("Char");
     $pikachu = new Pikachu("Pika");
 
-    pokemon::battle($pikachu,$pikachu->attacks[0],$charmeleon);
-    pokemon::battle($charmeleon,$charmeleon->attacks[1],$pikachu);
 
+    $pikachu->battle($pikachu->attacks[0],$charmeleon);
+    $charmeleon->battle($charmeleon->attacks[1],$pikachu);
+
+    echo(Pokemon::getPopulation());
 ?>
